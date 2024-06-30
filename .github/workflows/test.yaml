@@ -21,7 +21,7 @@ jobs:
             "mcr.microsoft.com/devcontainers/base:ubuntu"
           ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli

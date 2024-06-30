@@ -8,10 +8,10 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
       - name: "Publish Features"
-        uses: devcontainers/action@v1
+        uses: devcontainers/action@528049dce833673f136ddfc09c2720d450029a6b # v1
         with:
           publish-features: "true"
           base-path-to-features: "./src"
